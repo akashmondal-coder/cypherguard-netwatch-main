@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CypherGuard Network Design System - Dark Blue with Neon Accents */
+
+@layer base {
+  :root {
+    /* Core Dark Blue Theme */
+    --background: 225 39% 7%;
+    --foreground: 210 40% 98%;
+
+    --card: 225 39% 9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 225 39% 9%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Neon Blue Primary */
+    --primary: 195 100% 50%;
+    --primary-foreground: 225 39% 7%;
+    --primary-glow: 195 100% 65%;
+
+    /* Smokey Blue Secondary */
+    --secondary: 220 15% 25%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Muted Dark */
+    --muted: 220 13% 18%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    /* Neon Accent */
+    --accent: 180 100% 50%;
+    --accent-foreground: 225 39% 7%;
+    --accent-glow: 180 100% 65%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 13% 20%;
+    --input: 220 13% 20%;
+    --ring: 195 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom CypherGuard Colors */
+    --cyber-blue: 225 39% 7%;
+    --cyber-blue-light: 225 35% 15%;
+    --neon-blue: 195 100% 50%;
+    --neon-cyan: 180 100% 50%;
+    --smokey-blue: 220 15% 25%;
+    --deep-black: 0 0% 5%;
+
+    /* Gradients */
+    --gradient-cyber: linear-gradient(135deg, hsl(var(--cyber-blue)), hsl(var(--cyber-blue-light)));
+    --gradient-neon: linear-gradient(135deg, hsl(var(--neon-blue)), hsl(var(--neon-cyan)));
+    --gradient-glow: linear-gradient(135deg, hsl(var(--neon-blue) / 0.3), hsl(var(--neon-cyan) / 0.3));
+
+    /* Shadows & Glows */
+    --shadow-neon: 0 0 20px hsl(var(--neon-blue) / 0.5);
+    --shadow-cyber: 0 10px 30px -10px hsl(var(--cyber-blue) / 0.8);
+    --glow-strong: 0 0 40px hsl(var(--neon-blue) / 0.6);
+    --glow-soft: 0 0 20px hsl(var(--neon-cyan) / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-secondary rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary;
+  }
+}
+
+@layer components {
+  /* Neon Glow Effects */
+  .neon-glow {
+    box-shadow: var(--shadow-neon);
+  }
+
+  .neon-glow-strong {
+    box-shadow: var(--glow-strong);
+  }
+
+  .neon-glow-soft {
+    box-shadow: var(--glow-soft);
+  }
+
+  /* Hover Effects */
+  .hover-glow {
+    transition: var(--transition-smooth);
+  }
+
+  .hover-glow:hover {
+    box-shadow: var(--glow-strong);
+    transform: translateY(-2px);
+  }
+
+  .hover-scale {
+    transition: var(--transition-bounce);
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+
+  /* Animated Backgrounds */
+  .cyber-bg {
+    background: var(--gradient-cyber);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cyber-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-glow);
+    animation: shimmer 3s infinite;
+  }
+
+  @keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: var(--shadow-neon); }
+    50% { box-shadow: var(--glow-strong); }
+  }
+
+  .pulse-glow {
+    animation: pulse-glow 2s infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .float-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+}
