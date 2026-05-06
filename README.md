@@ -1,73 +1,70 @@
-# Welcome to your Lovable project
+# CypherGuard NetWatch 🛡️🌐
 
-## Project info
+**CypherGuard NetWatch** is an advanced, professional-grade network monitoring and security solution. Built with a modern tech stack focusing on type safety and real-time data tracking, it provides users with a comprehensive dashboard to monitor device activities and ensure network integrity.
 
-**URL**: https://lovable.dev/projects/a052b4e5-8379-4f70-9e5a-d8f4fce57b78
+---
 
-## How can I edit this code?
+## 🚀 Technologies & Frameworks Used
 
-There are several ways of editing your application.
+### 🛠 Frontend & Core
+- **React.js (Vite)**: For building a fast and reactive user interface.
+- **TypeScript**: Ensuring strict type safety and reducing runtime errors.
+- **Tailwind CSS**: For a modern, clean, and fully responsive UI design.
 
-**Use Lovable**
+### 🔐 Backend & Integration
+- **Supabase**: Open-source Firebase alternative for database management and authentication.
+- **Lucide React**: For beautiful and consistent iconography across the security dashboard.
+- **PostCSS & Autoprefixer**: Ensuring cross-browser CSS compatibility.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a052b4e5-8379-4f70-9e5a-d8f4fce57b78) and start prompting.
+### 📦 Tools & Configuration
+- **ESLint**: Maintaining high-quality and consistent code standards.
+- **Vite Config**: Optimized build tool for a blazing-fast development experience.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## ✨ Key Features
+✅ **Advanced Network Monitoring**: Real-time tracking of device status and network traffic.  
+✅ **Security Dashboard**: A professional interface for visualizing security metrics and alerts.  
+✅ **Type-Safe Development**: Fully architected with **TypeScript** for reliability.  
+✅ **Responsive UI**: Optimized for all devices—from large monitors to mobile screens.  
+✅ **Database Integration**: Seamless connection with **Supabase** for persistent data logging.  
+✅ **Modern Icons**: Intuitive navigation using high-quality SVG icons from Lucide-React.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🕹 Getting Started
 
-Follow these steps:
+Follow these steps to run the project locally:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. **Clone the Repository**:
+   ```bash
+   git clone [https://github.com/akashmondal-coder/cypherguard-netwatch-main.git](https://github.com/akashmondal-coder/cypherguard-netwatch-main.git)
+Install Dependencies:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Bash
+npm install
+Environment Setup:
+Create a .env file and add your Supabase credentials.
 
-# Step 3: Install the necessary dependencies.
-npm i
+Run in Development Mode:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Bash
 npm run dev
-```
+📁 Project Structure Highlights
+src/components: Reusable UI components for the security dashboard.
 
-**Edit a file directly in GitHub**
+src/hooks: Custom React hooks for network logic and data fetching.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+src/integrations: Connection logic for external services like Supabase.
 
-**Use GitHub Codespaces**
+src/pages: Main application views including the monitoring hub.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+📸 Dashboard Preview
+(Add a high-quality screenshot of your running dashboard here)
 
-## What technologies are used for this project?
+👨‍💻 Author
+Akash Mondal B.Tech in Computer Science and Engineering
 
-This project is built with:
+🔗 LinkedIn
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/a052b4e5-8379-4f70-9e5a-d8f4fce57b78) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+💻 GitHub
