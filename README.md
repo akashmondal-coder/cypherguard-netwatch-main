@@ -39,32 +39,19 @@ Follow these steps to run the project locally:
 1. **Clone the Repository**:
    ```bash
    git clone [https://github.com/akashmondal-coder/cypherguard-netwatch-main.git](https://github.com/akashmondal-coder/cypherguard-netwatch-main.git)
-Install Dependencies:
 
-Bash
+2. **Install Dependencies**:
 npm install
-Environment Setup:
-Create a .env file and add your Supabase credentials.
 
-Run in Development Mode:
-
-Bash
+3. **Run in Development Mode**:
 npm run dev
-📁 Project Structure Highlights
-src/components: Reusable UI components for the security dashboard.
-
-src/hooks: Custom React hooks for network logic and data fetching.
-
-src/integrations: Connection logic for external services like Supabase.
-
-src/pages: Main application views including the monitoring hub.
 
 📸 Dashboard Preview
-(Add a high-quality screenshot of your running dashboard here)
+<img width="1920" height="1080" alt="Screenshot 2026-05-06 145359" src="https://github.com/user-attachments/assets/3da4f782-dd7f-49c1-a66a-c8c42bb90608" />
+
+---
 
 👨‍💻 Author
 Akash Mondal B.Tech in Computer Science and Engineering
-
-🔗 LinkedIn
-
-💻 GitHub
+🔗 [LinkedIn](https://www.linkedin.com/in/akashmondal956)  
+💻 [GitHub](https://github.com/akashmondal-coder)
