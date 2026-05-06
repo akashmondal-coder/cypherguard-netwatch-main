@@ -51,7 +51,10 @@ npm run dev
 
 ---
 
-👨‍💻 Author
-Akash Mondal B.Tech in Computer Science and Engineering
+## 👨‍💻 Author
+
+**Akash Mondal** B.Tech in Computer Science and Engineering  
+
 🔗 [LinkedIn](https://www.linkedin.com/in/akashmondal956)  
+
 💻 [GitHub](https://github.com/akashmondal-coder)
